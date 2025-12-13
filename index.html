@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Travel Planner Pro</title>
     
-    <!-- Web App Icons -->
-    <!-- Updated to v=5 to force cache flush -->
-    <link rel="icon" type="image/png" href="./icon.png?v=5">
-    <link rel="apple-touch-icon" href="./icon.png?v=5">
-    <link rel="manifest" href="./manifest.json?v=5">
+    <!-- Web App Icons: Using Data URI SVG to guarantee display without external file -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="./manifest.json?v=6">
     
     <!-- Mobile Web App Capable (PWA feel) -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -93,7 +92,20 @@
       /* Safe Area for Mobile */
       .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
     </style>
-  <script type="module" crossorigin src="./assets/index-BKROgXZ_.js"></script>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "firebase/": "https://esm.sh/firebase@^12.6.0/",
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-B2h1yOKR.js"></script>
 </head>
   <body>
     <div id="root"></div>
